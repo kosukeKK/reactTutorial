@@ -6,7 +6,7 @@ interface HelloProps {
 }
 
 const Hello: React.SFC<HelloProps> = (props) => (
-    <div>Hell2asdo {props.name}!</div>
+    <div>Hell2ao {props.name}!</div>
 );
 
 Hello.defaultProps = {
