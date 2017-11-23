@@ -1,9 +1,16 @@
 import React from 'react'
-
-const App = () => (
-<div>
-Hello World!
-</div>
+import {connect} from 'react-redux';
+import { addCr } from '../actions';
+const App = (that) => (
+    <div>
+        {that.state.id}
+        Hello World!
+        <button onClick={e => {that.dispatch(addCr());}}/>
+    </div>
 );
 
-export default App
+const mapStateToProps = (state)  => {
+    return {state};
+};
+
+export default connect(mapStateToProps)(App);

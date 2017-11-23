@@ -1,12 +1,16 @@
-const todo = (state, action) => {
+const initialState = {
+    id: 0,
+};
+
+const addCounter = (state=initialState, action) => {
     switch (action.type) {
-        case 'ADD_TODO':
+        case 'ADD_COUNTER':
             return {
                 id: action.id,
-                text: action.text
             };
         default:
             return state
     }
-}
-export default todo
+};
+
+export default addCounter

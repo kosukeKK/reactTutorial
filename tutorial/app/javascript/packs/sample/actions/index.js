@@ -1,9 +1,5 @@
+let nextNum = 0;
+export const addCr = () => {
+    return {type: 'ADD_COUNTER', id: nextNum++}
 
-let nextTodoId = 0;
-export const addTodo = (text) => {
-    return {
-        type: 'ADD_TODO',
-        id: nextTodoId++,
-        text
-    }
 };
