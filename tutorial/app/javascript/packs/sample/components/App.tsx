@@ -5,7 +5,7 @@ const App = (that :any) => (
     <div>
         {that.state.id}
         Hello World!
-        <button onClick={e => {that.dispatch(addCr());}}/>
+        <button onClick={e => {that.dispatch(addCr());}}>1 up</button>
     </div>
 );
 
