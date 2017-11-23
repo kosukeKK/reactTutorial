@@ -1,7 +1,7 @@
-import React from 'react'
+import * as React from 'react'
 import {connect} from 'react-redux';
 import { addCr } from '../actions';
-const App = (that) => (
+const App = (that :any) => (
     <div>
         {that.state.id}
         Hello World!
@@ -9,7 +9,7 @@ const App = (that) => (
     </div>
 );
 
-const mapStateToProps = (state)  => {
+const mapStateToProps = (state :number)  => {
     return {state};
 };
 
