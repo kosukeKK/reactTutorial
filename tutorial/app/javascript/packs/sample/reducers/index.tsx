@@ -2,7 +2,7 @@ const initialState = {
     id: 0,
 };
 
-const addCounter = (state=initialState, action) => {
+const addCounter = (state=initialState, action: any) => {
     switch (action.type) {
         case 'ADD_COUNTER':
             return {
