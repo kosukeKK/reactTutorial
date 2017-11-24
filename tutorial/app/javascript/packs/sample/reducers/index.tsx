@@ -1,5 +1,6 @@
 const initialState = {
     id: 0,
+    texts: []
 };
 
 const addCounter = (state=initialState, action: any) => {
@@ -7,6 +8,7 @@ const addCounter = (state=initialState, action: any) => {
         case 'ADD_COUNTER':
             return {
                 id: action.id,
+                texts: action.texts
             };
         default:
             return state
