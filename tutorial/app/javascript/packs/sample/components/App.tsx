@@ -1,16 +1,16 @@
-import * as React from 'react'
+import * as React from 'react';
 import {connect} from 'react-redux';
-import { addCr } from '../actions';
-const App = (that :any) => (
+import { addCounterAction } from '../actions';
+const App = (that: any) => (
     <div>
         {that.state.id}
         {that.state.texts}
         <br />
-        <button onClick={e => {that.dispatch(addCr("aaaa"));}}>1 up</button>
+        <button onClick={() => { that.dispatch(addCounterAction('aaaa')); }}>1 up</button>
     </div>
 );
 
-const mapStateToProps = (state :number)  => {
+const mapStateToProps = (state: number)  => {
     return {state};
 };
 

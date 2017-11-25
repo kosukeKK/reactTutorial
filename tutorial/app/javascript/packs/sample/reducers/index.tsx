@@ -3,7 +3,7 @@ const initialState = {
     texts: []
 };
 
-const addCounter = (state=initialState, action: any) => {
+const addCounter = (state = initialState, action: any) => {
     switch (action.type) {
         case 'ADD_COUNTER':
             return {
@@ -11,8 +11,8 @@ const addCounter = (state=initialState, action: any) => {
                 texts: action.texts
             };
         default:
-            return state
+            return state;
     }
 };
 
-export default addCounter
+export default addCounter;
